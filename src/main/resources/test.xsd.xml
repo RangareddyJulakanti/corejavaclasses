@@ -1,0 +1,9 @@
+<EmployeeList>
+  <!--Zero or more repetitions:-->
+  <Employee>
+    <fname>kiran</fname>
+    <lname>string</lname>
+    <city>string</city>
+    <state>AP</state>
+  </Employee>
+</EmployeeList>

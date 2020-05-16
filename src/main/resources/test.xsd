@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EmployeeList" type="EmployeeListType"/>
+  <xs:complexType name="EmployeeType">
+    <xs:sequence>
+      <xs:element name="fname">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ranga"/>
+            <xs:enumeration value="kiran"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="lname"/>
+      <xs:element type="xs:string" name="city"/>
+      <xs:element name="state">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="AP"/>
+            <xs:enumeration value="TS"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmployeeListType">
+    <xs:sequence>
+      <xs:element type="EmployeeType" name="Employee" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

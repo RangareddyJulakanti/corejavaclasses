@@ -1,0 +1,15 @@
+<EmployeeList>
+<Employee>
+    <fname>ranga</fname>
+    <lname>reddy</lname>
+    <city>knl</city>
+    <state>AP</state>
+</Employee>
+<Employee>
+    <fname>kiran</fname>
+    <lname>reddy</lname>
+    <city>knl</city>
+    <state>TS</state>
+</Employee>
+</EmployeeList>
+
